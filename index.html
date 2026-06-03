@@ -1,1 +1,221 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinyl Store - Loja de Discos</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            color:#333;
+        }
+
+        header{
+            background:#111;
+            color:white;
+            padding:20px;
+        }
+
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            max-width:1200px;
+            margin:auto;
+        }
+
+        .logo{
+            font-size:28px;
+            font-weight:bold;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            gap:20px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:#f39c12;
+        }
+
+        .hero{
+            background:linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+            url("https://images.unsplash.com/photo-1511379938547-c1f69419868d");
+            background-size:cover;
+            background-position:center;
+            height:500px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            color:white;
+        }
+
+        .hero-content h1{
+            font-size:48px;
+            margin-bottom:15px;
+        }
+
+        .hero-content p{
+            font-size:20px;
+        }
+
+        section{
+            max-width:1200px;
+            margin:60px auto;
+            padding:0 20px;
+        }
+
+        .card{
+            background:white;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,.1);
+        }
+
+        h2{
+            margin-bottom:20px;
+            color:#111;
+        }
+
+        .grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        footer{
+            background:#111;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:20px;
+            background:#f39c12;
+            color:white;
+            padding:12px 24px;
+            text-decoration:none;
+            border-radius:5px;
+        }
+
+        .btn:hover{
+            background:#d68910;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">Vinyl Store</div>
+
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="servicos.html">Mais Serviços</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Bem-vindo à Vinyl Store</h1>
+        <p>Os melhores discos de vinil para colecionadores e amantes da música.</p>
+        <a href="produtos.html" class="btn">Ver Produtos</a>
+    </div>
+</section>
+
+<!-- Seção 1 -->
+<section>
+    <div class="card">
+        <h2>Sobre Nossa Loja</h2>
+        <p>
+            A Vinyl Store é especializada na venda de discos de vinil novos e
+            usados. Trabalhamos com uma grande variedade de gêneros musicais,
+            incluindo Rock, Pop, Jazz, Blues, MPB, Rap e música clássica.
+            Nosso objetivo é oferecer aos clientes uma experiência única,
+            conectando gerações através da música.
+        </p>
+    </div>
+</section>
+
+<!-- Seção 2 -->
+<section>
+    <div class="card">
+        <h2>Por Que Escolher Nossa Loja?</h2>
+
+        <div class="grid">
+            <div>
+                <h3>🎵 Acervo Exclusivo</h3>
+                <p>
+                    Possuímos edições raras, clássicos históricos e lançamentos
+                    recentes para todos os gostos.
+                </p>
+            </div>
+
+            <div>
+                <h3>💿 Qualidade Garantida</h3>
+                <p>
+                    Todos os discos passam por uma análise cuidadosa para garantir
+                    a melhor experiência sonora.
+                </p>
+            </div>
+
+            <div>
+                <h3>🚚 Entrega Segura</h3>
+                <p>
+                    Embalagens reforçadas para proteger seu vinil durante o
+                    transporte.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seção 3 -->
+<section>
+    <div class="card">
+        <h2>A Cultura do Vinil</h2>
+
+        <p>
+            O disco de vinil continua conquistando fãs em todo o mundo devido à
+            sua qualidade sonora única e ao valor sentimental que proporciona.
+            Além da música, os encartes, capas e edições especiais transformam
+            cada álbum em uma verdadeira peça de coleção.
+        </p>
+
+        <p style="margin-top:15px;">
+            Na Vinyl Store acreditamos que ouvir música em vinil é mais do que
+            apertar o play: é uma experiência completa que envolve arte, história
+            e emoção.
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Vinyl Store - Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
